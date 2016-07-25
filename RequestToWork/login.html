@@ -1,0 +1,105 @@
+<!DOCTYPE html>  
+<html lang="en">  
+	<head>
+		<title>Request To Work</title>
+		<meta charset="utf-8">		
+		<!-- "X-UA-Compatible" meta tag -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!-- "viewport" tag -->
+		<meta name= "viewport" content= "width=device-width, initial-scale=1">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+		
+		<link rel="stylesheet" href="assets/CSS/theme.css">
+		
+	</head>
+	<body>
+		<header class="">
+
+		</header>
+		<div class="container">
+		
+		
+		<div class="row text-center">
+		  <h3>Welcome back : </h3>
+		  <a href="#" class="btn btn-lg btn-success" data-toggle="modal" data-target="#logInModal">Log In</a>
+	    </div>
+	  
+		<div class="row text-center">
+		  <h3>Not a member yet? </h3>
+		  <a href="#" class="btn btn-lg btn-primary" data-toggle="modal" data-target="#registerModal">Register</a>
+	    </div>
+  
+		  <div class="modal fade" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModal" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">Log In</h4>
+			  </div>
+			    <div class="modal-body">
+				<form id="form" action="index.html" method="get" >
+					<label for= "Name">Last Name: </label>
+					<input type= "text" id= "Name" value="" name="Name">
+					<br>
+					<label for= "Employee ID">Employee ID: </label>
+					<input type= "text" id= "Employee ID" value="" name="Employee ID">
+					<br>
+					<label for= "password">Password: </label>
+					<input type= "password" id= "password" value="" name="password">
+					<br>
+					<button type="submit" class="btn btn-primary">Log In</button>
+				</form>
+				</div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				
+			  </div>
+			</div>
+		  </div>
+		</div>
+  
+		
+		  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModal" aria-hidden="true">
+		  <div class="modal-dialog modal-lg">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">Large Modal</h4>
+			  </div>
+			  <div class="modal-body">
+				<h3>Modal Body</h3>
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Register</button>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+		
+		<script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="assets/js/theme.js"></script>
+		<script>
+			var data = $('#form').serializeArray().reduce(function(obj, item) {
+			obj[item.name] = item.value;
+			return obj;
+			}, {});
+		</script>
+	</body>
+</html>
+
+	

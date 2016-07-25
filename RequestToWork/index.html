@@ -1,0 +1,249 @@
+<!DOCTYPE html>  
+<html lang="en">  
+	<head>
+		<title>Request To Work</title>
+		<meta charset="utf-8">		
+		<!-- "X-UA-Compatible" meta tag -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!-- "viewport" tag -->
+		<meta name= "viewport" content= "width=device-width, initial-scale=1">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+		
+		<link rel="stylesheet" href="assets/CSS/theme.css">
+		
+				<script> 
+				var vars, pair;
+				var QueryString = function () {
+			// This function is anonymous, is executed immediately and 
+			// the return value is assigned to QueryString!
+			var query_string = {};
+			var query = window.location.search.substring(1);
+			vars = query.split("&");
+			alert(vars);
+			for (var i=0;i<vars.length;i++) {
+				var pair = vars[i].split("=");
+					// If first entry with this name
+				if (typeof query_string[pair[0]] === "undefined") {
+				  query_string[pair[0]] = pair[1];
+					// If second entry with this name
+				} else if (typeof query_string[pair[0]] === "string") {
+				  var arr = [ query_string[pair[0]], pair[1] ];
+				  query_string[pair[0]] = arr;
+					// If third or later entry with this name
+				} else {
+				  query_string[pair[0]].push(pair[1]);
+				}
+			  } alert(pair[1]);
+			return query_string;
+			}();
+		</script>
+	</head>
+	<body>
+		<header class="">
+
+		</header>
+		<div class="container">
+			<h1>Request To Work</h1>
+			<!-- <label for= "name">Name: </label>
+			<input type= "text" id= "name" value="" class= "noBorder" disabled> -->
+			<script>document.write(vars[0]);</script>
+			<br>
+			<label for= "employeeID" >Employee ID: </label>
+			<input type="text" id="employeeID" value= "123456" class= "noBorder">
+			<br>
+			<div class="container">
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#wr">Work Requests</a></li>
+					<li><a data-toggle="tab" href="#rr">Relief Requests</a></li>
+				</ul>
+				
+				<div class="tab-content">
+					<div id="wr" class="tab-pane fade in active border">
+						<h3>Work Requests</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>		
+						<div class="small-container">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+											<i class="glyphicon glyphicon-minus"></i>Spring/Summer</a>
+											<button type="button" class= "btn btn-success pull-right">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p>
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTwo">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+											<i class="glyphicon glyphicon-plus"></i>Fall/Winter</a>
+											<button type="button" class= "btn btn-success pull-right">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+										<div class="panel-body">
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p>
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+											<p>Joe's Pool Center - Instructor - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+					<div id="rr" class="tab-pane fade border">
+						<div class="small-container">
+							<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneOne">
+										<h4 class="panel-title">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
+											<i class="glyphicon glyphicon-minus"></i>Type A Requests</a>
+											<button type="button" class= "btn btn-success pull-right">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse11" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOneOne">
+										<div class="panel-body">
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneTwo">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordion2" href="#collapse12" aria-expanded="false" aria-controls="heading12">
+											<i class="glyphicon glyphicon-plus"></i>Type B Requests</a>
+											<button type="button" class= "btn btn-success pull-right">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneTwo">
+										<div class="panel-body">
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+											<p>Joe's Pool Center - Instructor - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneThree">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordion2" href="#collapse13" aria-expanded="false" aria-controls="heading13">
+											<i class="glyphicon glyphicon-plus"></i>Type C Requests</a>
+											<button type="button" class= "btn btn-success">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneThree">
+										<div class="panel-body">
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p>
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+											<p>Joe's Pool Center - Instructor - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneFour">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordion2" href="#collapse14" aria-expanded="false" aria-controls="heading14">
+											<i class="glyphicon glyphicon-plus"></i>Type D Requests</a>
+											<button type="button" class= "btn btn-success pull-right">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneFour">
+										<div class="panel-body">
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+											<p>Joe's Pool Center - Instructor - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+
+		<script>
+			jQuery(function ($) {
+				$('[data-toggle="collapse"]').on('click', function() {
+					var $this = $(this),
+							$parent = typeof $this.data('parent')!== 'undefined' ? $($this.data('parent')) : undefined;
+					if($parent === undefined) { /* Just toggle my  */
+						$this.find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+						return true;
+					}
+
+					/* Open element will be close if parent !== undefined */
+					var currentIcon = $this.find('.glyphicon');
+					currentIcon.toggleClass('glyphicon-plus glyphicon-minus');
+					$parent.find('.glyphicon').not(currentIcon).removeClass('glyphicon-minus').addClass('glyphicon-plus');
+
+				});
+			});
+		</script>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+		
+		<script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="assets/js/theme.js"></script>
+	</body>
+</html>
+
+	

@@ -1,0 +1,37 @@
+*{
+/*	border: 4px solid black;
+	background: red;
+*/
+}
+.small-container{
+	width: 90%;
+	padding: 5px 30px;
+}
+.noBorder{
+	border: none;
+}
+
+.border{
+	border: 1px solid #ccc;
+	border-top: none;
+	padding: 10px;
+}
+.nav-tabs:active{
+	background: #ccc;
+}
+.tab-content{
+	border-left: 4px;
+ 
+}
+.panel-title{
+	padding: 10px;
+}
+.pull-right{
+ float: right;
+	margin-top: -10px;
+}
+
+.alignRight{
+	text-align: right;
+	margin-top: -20px;
+}
