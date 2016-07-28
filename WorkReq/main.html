@@ -1,0 +1,700 @@
+<!DOCTYPE html>  
+<html lang="en">  
+	<head>
+		<title>Request To Work</title>
+		<meta charset="utf-8">		
+		<!-- "X-UA-Compatible" meta tag -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!-- "viewport" tag -->
+		<meta name= "viewport" content= "width=device-width, initial-scale=1">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		<link href="assets/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
+		<script src="assets/js/bootstrap-multiselect.js"></script>
+		<link rel="stylesheet" href="assets/css/theme.css">
+		<script src="assets/js/main.js"></script>
+		<script> 
+			var vars, name, mom;
+			var QueryString = function () {
+				// This function is anonymous, is executed immediately and 
+				// the return value is assigned to QueryString!
+				var query_string = {};
+				var query = window.location.search.substring(1);
+				//alert("query is " + query);
+				vars = query.split("&");
+				//alert("query after split by = is " + vars);
+				
+				lname = vars[0].substr(6);
+				//	alert("name is " + name);
+
+				empID = vars[1].substr(6);
+				//	alert("empID is " + empID);
+				
+				return query_string;
+			}();
+		</script>
+
+	</head>
+	<body>
+		<!-- web page header -->
+		<header role="banner">
+
+		</header>
+		<!-- web page main content -->
+		<main role="main" property="mainContentOfPage" class="container">
+			<h1>Request To Work</h1>
+			<br>
+			Name: <script>document.write(" " + lname);</script>
+			<br>
+			Employee ID: <script>document.write(" " + empID);</script>
+			<br>
+			<!-- web page main accordion tabs -->
+			<br>
+			<div class="container">
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#workRequest">Work Requests</a></li>
+					<li><a data-toggle="tab" href="#reliefRequest">Relief Requests</a></li>
+				</ul>
+				<div class="tab-content">
+<!-- Work Requests tab -->	
+					<div id="workRequest" class="tab-pane fade in active border">
+					<div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+						<h3>Work Requests</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>
+						<div class="small-container">
+																<!-- WHY IS IT "accordion2" -->
+							<!-- work requests Type A panel-->	
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneOne">
+										<h4 class="panel-title">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse11" aria-expanded="true" aria-controls="collapse11">
+											<i class="glyphicon glyphicon-minus"></i>Type A Requests</a>
+											<button type="button" class= "btn btn-success pull-right" data-toggle="modal" data-target="#typeAModal">Add New</button>
+										</h4>
+									</div>
+									<!-- panel body -->
+									<div class="panel-body">
+										<div id="collapse11" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOneOne">
+
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "pull-right">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div><!-- end of panel body -->
+								</div>
+<!-- work requests Type B panel-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneTwo">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordion2" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+											<i class="glyphicon glyphicon-plus"></i>Type B Requests</a>
+											<button type="button" class= "btn btn-success pull-right" data-toggle="modal" data-target="#typeBModal">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneTwo">
+										<div class="panel-body">
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+											<p>Joe's Pool Center - Instructor - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div>
+								</div>
+<!-- work requests Type C panel-->
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneThree">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordion2" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+											<i class="glyphicon glyphicon-plus"></i>Type C Requests</a>
+											<button type="button" class= "btn btn-success pull-right" data-toggle="modal" data-target="#typeCModal">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneThree">
+										<div class="panel-body">
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p>
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+											<p>Joe's Pool Center - Instructor - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div>
+								</div>
+<!-- work requests Type D panel-->								
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOneFour">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordion2" href="#collapse14" aria-expanded="false" aria-controls="collapse14">
+											<i class="glyphicon glyphicon-plus"></i>Type D Requests</a>
+											<button type="button" class= "btn btn-success pull-right" data-toggle="modal" data-target="#typeDModal">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneFour">
+										<div class="panel-body">
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+											<p>Joe's Pool Center - Instructor - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div>
+								</div><!-- end of panel D -->
+						    </div><!-- end of accordion -->
+						</div>
+					</div><!-- end of tabs -->
+
+<!-- Relief Requests --> 
+					<div id="reliefRequest" class="tab-pane fade border">
+						<h3>Relief Requests</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</p>		
+						<div class="small-container">
+							<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+								<!-- Spring/Summer panel --> 
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingOne">
+										<h4 class="panel-title">
+											<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+											<i class="glyphicon glyphicon-minus"></i>Spring/Summer</a>
+											<button type="button" class= "btn btn-success pull-right" data-toggle="modal" data-target="#reliefModal">Add New</button>
+										</h4>
+									</div>
+									
+									<div id="collapse1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+										<div class="panel-body">
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p>
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Fall/Winter panel --> 
+								<div class="panel panel-default">
+									<div class="panel-heading" role="tab" id="headingTwo">
+										<h4 class="panel-title">
+											<a class="accordion-toggle"  data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+											<i class="glyphicon glyphicon-plus"></i>Fall/Winter</a>
+											<button type="button" class= "btn btn-success pull-right" data-toggle="modal" data-target="#reliefModal">Add New</button>
+										</h4>
+									</div>
+									<div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+										<div class="panel-body">
+											<p>Albion Aquatic Center - Life Guard - Mon to Fri - 8:30AM to 10:00 AM</p>
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+											<p>Joe's Pool Center - Instructor - Mon to Fri - 8:30AM to 10:00 AM</p> 
+											<div class= "alignRight">
+												<button type="button" class= "btn btn-info">Edit</button> 
+												<button type="button" class= "btn btn-danger">Remove</button>
+											</div>
+										</div>
+									</div>
+								</div>
+						    </div>
+						</div>
+					</div><!-- end of relief tab -->
+				</div><!-- end of tab content -->
+			</div>
+			
+			<!-- type A modal -->				
+			<div class="modal fade" id="typeAModal" tabindex="-1" role="dialog" aria-labelledby="typeAModal" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<!-- panel header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h1 class="modal-title" id="TypeALabel">New Type A Request</h1>
+						</div>
+						<!-- panel body -->
+						<div class="modal-body">
+							<br>
+							<h2 class="h3">Previous Work Experience</h2>
+							<br>
+							<!-- form -->
+							<form id="form" action="index.html" method="get">
+								<div class= "well well-sm">
+									<p><b>Albion Aquatic Center - Life Guard </b></p>
+									<button type="submit" class="btn btn-success pull-right">Add Request</button>
+									<p>Mon to Fri - 9:30 AM to 10:00 AM </p>
+								</div>
+								<div class= "well well-sm">
+									<p><b>Albion Aquatic Center - Instructor </b></p>
+									<button type="submit" class="btn btn-success pull-right">Add Request</button>
+									<p>Mon 4:00PM to 6:00PM </p>
+								</div>
+								<div class= "well well-sm">
+									<p><b>Joe's Pool Center - Life Guard </b></p>
+									<button type="submit" class="btn btn-success pull-right">Add Request</button>
+									<p>Mon to Friday - 4:30PM to 6:00PM </p>
+								</div>
+							</form>
+						</div>
+						<!-- panel footer -->
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div><!-- end of modal content -->
+				</div>
+			</div><!-- end of modal -->
+			
+			<!-- type B modal -->				
+			<div class="modal fade" id="typeBModal" tabindex="-1" role="dialog" aria-labelledby="typeBModal" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<!-- panel header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h1 class="modal-title" id="TypeBLabel">New Type B Request</h1>
+						</div>
+						<!-- panel body -->
+						<div class="modal-body">
+							<br>
+									<div class="well">
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "location">Location:</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="location" name="location" class="fomWidth form-control" disabled>
+												<option>Albion Aquatic Center</option>
+												<option>Scarborough</option>
+												<option>North York</option>
+												<option>Toronto</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "job">Job Classification: </label>
+										</div>
+										<div class="col-xs-9">
+											<select id="job" name="job" class="fomWidth form-control" disabled>
+												<option>Lifeguard</option>
+												<option>Swim Instructor</option>
+												<option>Maintenance</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "days">Days():</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="days" name="days" class="days fomWidth form-control" multiple="multiple">
+												<option name="monday">Monday</option>
+												<option name="tuesday">Tuesday</option>
+												<option name="wednesday">Wednesday</option>
+												<option name="thursday">Thursday</option>
+												<option name="friday">Friday</option>
+												<option name="saturday">Saturday</option>
+												<option name="sunday">Sunday</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">															
+											<label for= "availStart">Available Start Time</label>
+										</div>
+										<div class="col-xs-9">
+											<input type="time" id="availStart" name="availStart" class="fomWidth form-control">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "availEnd">Available End Time</label>
+										</div>
+										<div class="col-xs-9">
+											<input type="time" id="availEnd" name="availEnd" class="fomWidth form-control">
+										</div>
+									</div>														
+									<div class="row">
+										<div class="col-xs-3">		
+											<label for= "season">Season</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="season" name="season" class="fomWidth form-control">
+												<option>Options</option>
+												<option>Spring/Summer</option>
+												<option>Fall/Winter</option>
+											</select>
+										</div>
+									</div>
+									<br><br>	
+									<div class="row">
+										<div class="col-xs-5"></div>
+										<div class="col-xs-7">														
+											<button type="submit" class="btn btn-success">Add Request</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- panel footer -->
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div><!-- end of modal content -->
+				</div>
+			</div><!-- end of modal -->
+			
+			<!-- type C modal -->				
+			<div class="modal fade" id="typeCModal" tabindex="-1" role="dialog" aria-labelledby="typeCModal" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<!-- panel header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h1 class="modal-title" id="TypeBLabel">New Type C Request</h1>
+						</div>
+						<!-- panel body -->
+						<div class="modal-body">
+							<br>
+									<div class="well">
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "location">Location:</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="location" name="location" class="fomWidth form-control" disabled>
+												<option>Albion Aquatic Center</option>
+												<option>Scarborough</option>
+												<option>North York</option>
+												<option>Toronto</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "job">Job Classification: </label>
+										</div>
+										<div class="col-xs-9">
+											<select id="job" name="job" class="fomWidth form-control">
+												<option>Lifeguard</option>
+												<option>Swim Instructor</option>
+												<option>Maintenance</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "days">Days():</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="days" name="days" class="days fomWidth form-control" multiple="multiple">
+												<option name="monday">Monday</option>
+												<option name="tuesday">Tuesday</option>
+												<option name="wednesday">Wednesday</option>
+												<option name="thursday">Thursday</option>
+												<option name="friday">Friday</option>
+												<option name="saturday">Saturday</option>
+												<option name="sunday">Sunday</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">															
+											<label for= "availStart">Available Start Time</label>
+										</div>
+										<div class="col-xs-9">
+											<input type="time" id="availStart" name="availStart" class="fomWidth form-control">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "availEnd">Available End Time</label>
+										</div>
+										<div class="col-xs-9">
+											<input type="time" id="availEnd" name="availEnd" class="fomWidth form-control">
+										</div>
+									</div>														
+									<div class="row">
+										<div class="col-xs-3">		
+											<label for= "season">Season</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="season" name="season" class="fomWidth form-control">
+												<option>Options</option>
+												<option>Spring/Summer</option>
+												<option>Fall/Winter</option>
+											</select>
+										</div>
+									</div>
+									<br><br>	
+									<div class="row">
+										<div class="col-xs-5"></div>
+										<div class="col-xs-7">														
+											<button type="submit" class="btn btn-success">Add Request</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- panel footer -->
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div><!-- end of modal content -->
+				</div>
+			</div><!-- end of modal -->
+			
+			<!-- type D modal -->				
+			<div class="modal fade" id="typeDModal" tabindex="-1" role="dialog" aria-labelledby="typeDModal" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<!-- panel header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h1 class="modal-title" id="TypeBLabel">New Type D Request</h1>
+						</div>
+						<!-- panel body -->
+						<div class="modal-body">
+							<br>
+									<div class="well">
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "location">Location:</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="location" name="location" class="fomWidth form-control">
+												<option>Albion Aquatic Center</option>
+												<option>Scarborough</option>
+												<option>North York</option>
+												<option>Toronto</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "job">Job Classification: </label>
+										</div>
+										<div class="col-xs-9">
+											<select id="job" name="job" class="fomWidth form-control">
+												<option>Lifeguard</option>
+												<option>Swim Instructor</option>
+												<option>Maintenance</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "days">Days():</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="days" name="days" class="days fomWidth form-control" multiple="multiple">
+												<option name="monday">Monday</option>
+												<option name="tuesday">Tuesday</option>
+												<option name="wednesday">Wednesday</option>
+												<option name="thursday">Thursday</option>
+												<option name="friday">Friday</option>
+												<option name="saturday">Saturday</option>
+												<option name="sunday">Sunday</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">															
+											<label for= "availStart">Available Start Time</label>
+										</div>
+										<div class="col-xs-9">
+											<input type="time" id="availStart" name="availStart" class="fomWidth form-control">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "availEnd">Available End Time</label>
+										</div>
+										<div class="col-xs-9">
+											<input type="time" id="availEnd" name="availEnd" class="fomWidth form-control">
+										</div>
+									</div>														
+									<div class="row">
+										<div class="col-xs-3">		
+											<label for= "season">Season</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="season" name="season" class="fomWidth form-control">
+												<option>Options</option>
+												<option>Spring/Summer</option>
+												<option>Fall/Winter</option>
+											</select>
+										</div>
+									</div>
+									<br><br>	
+									<div class="row">
+										<div class="col-xs-5"></div>
+										<div class="col-xs-7">														
+											<button type="submit" class="btn btn-success">Add Request</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- panel footer -->
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div><!-- end of modal content -->
+				</div>
+			</div><!-- end of modal -->
+			
+			<!-- relief modal -->				
+			<div class="modal fade" id="reliefModal" tabindex="-1" role="dialog" aria-labelledby="reliefModal" aria-hidden="true">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content">
+						<!-- panel header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							<h1 class="modal-title" id="TypeBLabel">New Relief Request</h1>
+						</div>
+						<!-- panel body -->
+						<div class="modal-body">
+							<br>
+									<div class="well">
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "location">Location:</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="location" name="location" class="fomWidth form-control">
+												<option>Albion Aquatic Center</option>
+												<option>Scarborough</option>
+												<option>North York</option>
+												<option>Toronto</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "job">Job Classification: </label>
+										</div>
+										<div class="col-xs-9">
+											<select id="job" name="job" class="fomWidth form-control">
+												<option>Lifeguard</option>
+												<option>Swim Instructor</option>
+												<option>Maintenance</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "days">Days():</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="days" name="days" class="days fomWidth form-control" multiple="multiple">
+												<option name="monday">Monday</option>
+												<option name="tuesday">Tuesday</option>
+												<option name="wednesday">Wednesday</option>
+												<option name="thursday">Thursday</option>
+												<option name="friday">Friday</option>
+												<option name="saturday">Saturday</option>
+												<option name="sunday">Sunday</option>
+											</select>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">															
+											<label for= "availStart">Available Start Time</label>
+										</div>
+										<div class="col-xs-9">
+											<input type="time" id="availStart" name="availStart" class="fomWidth form-control">
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-xs-3">
+											<label for= "availEnd">Available End Time</label>
+										</div>
+										<div class="col-xs-9">
+											<input type="time" id="availEnd" name="availEnd" class="fomWidth form-control">
+										</div>
+									</div>														
+									<div class="row">
+										<div class="col-xs-3">		
+											<label for= "season">Season</label>
+										</div>
+										<div class="col-xs-9">
+											<select id="season" name="season" class="fomWidth form-control">
+												<option>Options</option>
+												<option>Spring/Summer</option>
+												<option>Fall/Winter</option>
+											</select>
+										</div>
+									</div>
+									<br><br>	
+									<div class="row">
+										<div class="col-xs-5"></div>
+										<div class="col-xs-7">														
+											<button type="submit" class="btn btn-success">Add Request</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<!-- panel footer -->
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					  </div>
+					</div><!-- end of modal content -->
+				</div>
+			</div><!-- end of modal -->
+		</main> 
+
+		<script>
+			jQuery(function ($) {
+				$('[data-toggle="collapse"]').on('click', function() {
+					var $this = $(this),
+							$parent = typeof $this.data('parent')!== 'undefined' ? $($this.data('parent')) : undefined;
+					if($parent === undefined) { /* Just toggle my  */
+						$this.find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+						return true;
+					}
+
+					/* Open element will be close if parent !== undefined */
+					var currentIcon = $this.find('.glyphicon');
+					currentIcon.toggleClass('glyphicon-plus glyphicon-minus');
+					$parent.find('.glyphicon').not(currentIcon).removeClass('glyphicon-minus').addClass('glyphicon-plus');
+
+				});
+			});
+		</script>
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>  -->
+		
+		<script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="assets/js/theme.js"></script>
+	</body>
+</html>
+
+	
